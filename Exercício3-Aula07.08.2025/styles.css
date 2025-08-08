@@ -1,0 +1,18 @@
+.tabelas {
+    border-collapse: collapse; /* para remover espaços entre bordas */
+    margin: 80px 0;
+    width: 100%;
+    font-family: times;
+    font-weight: bold;
+}
+  
+.tabelas th, .tabelas td {
+    border: 3px solid green;
+    padding: 8px;
+    text-align: left;
+}
+  
+.tabelas th {
+    background-color: #ddd;
+}
+  
