@@ -1,0 +1,39 @@
+.tabelas {
+    border-collapse: collapse; /* para remover espaços entre bordas */
+    margin: 80px 0;
+    width: 100%;
+    font-family: times;
+    font-weight: bold;
+}
+  
+.tabelas th, .tabelas td {
+    border: 3px solid green;
+    padding: 8px;
+    text-align: left;
+}
+  
+.tabelas th {
+    background-color: #ddd;
+}
+
+.caixa-header {
+    position: relative;
+    width: 940px;
+    height: 200px;
+    margin: 0;
+}
+
+.logo {
+    position: static;
+}
+
+.cabeçalho {
+    position: relative;
+    top: 0px
+    left: 0px;
+    background-color: white;
+    padding: 1px;
+    color: white;
+}
+
+  
