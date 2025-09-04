@@ -1,0 +1,77 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilização das seções com cores diferentes */
+
+header {
+    background-color: blue;
+    color: white;
+    height: 180px;               /* Altura menor */
+    display: flex;
+    align-items: center;        /* Alinha verticalmente o conteúdo */
+    justify-content: center;    /* Alinha horizontalmente */
+    background-image: linear-gradient(to right, #5E98F1, #AEE4BD); /* Azul para Verde */
+    color: blue;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50px; /* Todos os cantos arredondados */
+}
+
+nav {
+    height: 100px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 50px; /* Todos os cantos arredondados */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    background-color: #f4f4f4;
+    gap: 20px;
+}
+
+article {
+    height: 400px;
+    flex: 3;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+aside {
+    height: 400px;
+    flex: 1;
+    background-color: #bbb;
+    padding: 20px;
+}
+
+footer {
+    height: 50px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50px; /* Todos os cantos arredondados */
+}
