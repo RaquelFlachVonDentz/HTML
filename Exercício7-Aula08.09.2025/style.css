@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cabecalho {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: green;
+    color: white;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: alterarcorcabecalho;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes alterarcorcabecalho {
+    0% {
+        background-color: #5E98F1;
+    }
+
+    25% {
+        background-color: #5CC97B;
+    }
+
+    50% {
+        background-color: #F9D933;
+    }
+
+    75% {
+        background-color: #FFA44F;
+    }
+
+    100% {
+        background-color: #5E98F1;
+    }
+}
+
+.tooltip-container {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    font-size: 20px;
+}
+
+.tooltip-container:hover .tooltip {
+    opacity: 1;
+}
+
+.main-container {
+    position: relative;
+    margin-top: 60px;
+    display: flex;
+    gap: 10px;
+    height: 400px; 
+    padding: 10px;
+}
+
+.flex-container1 {
+    width: 40%;
+    height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: DodgerBlue;
+    padding: 10px;
+}
+
+.flex-container2 {
+    width: 40%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: DodgerBlue;
+    padding: 10px;
+}
+
+.flex-containerrow {
+    width: 250px;
+    height: 250px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.flex-containercolunm {
+    width: 250px;
+    height: 250px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.caixa-animada1 {
+    width: 100px;
+    height: 100px;
+    background-color: #5E98F1;
+    position: absolute;
+    animation-name: moverCaixa1;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moverCaixa1 {
+    0% {
+        left: 0px;
+        bottom: 0px;
+        background-color: blue;
+    }
+
+    25% {
+        left: 200px;
+        bottom: 0px;
+        background-color: blueviolet;
+    }
+
+    50% {
+        left: 400px;
+        bottom: 200px;
+        background-color: yellow;
+    }
+
+    75% {
+        left: 0px;
+        bottom: 600px;
+        background-color: orangered;
+    }
+
+    100% {
+        left: 0px;
+        bottom: 0px;
+        background-color: purple;
+    }
+}
+
+
+.caixa-animada2 {
+    width: 200px;
+    height: 200px;
+    background-color: #5E98F1;
+    position: absolute;
+    animation-name: moverCaixa2;
+    animation-duration: 15s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moverCaixa2 {
+    0% {
+        right: 0px;
+        bottom: 0px;
+        background-color: blue;
+    }
+
+    25% {
+        right: 150px;
+        bottom: 50px;
+        background-color: blueviolet;
+    }
+
+    50% {
+        right: 800px;
+        bottom: 300px;
+        background-color: yellow;
+    }
+
+    75% {
+        right: 500px;
+        top: 600px;
+        background-color: orangered;
+    }
+
+    100% {
+        right: 0px;
+        top: 0px;
+        background-color: purple;
+    }
+}
+
