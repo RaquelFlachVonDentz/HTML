@@ -10,32 +10,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation-name: alterarcorcabecalho;
-    animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-
-@keyframes alterarcorcabecalho {
-    0% {
-        background-color: #5E98F1;
-    }
-
-    25% {
-        background-color: #5CC97B;
-    }
-
-    50% {
-        background-color: #F9D933;
-    }
-
-    75% {
-        background-color: #FFA44F;
-    }
-
-    100% {
-        background-color: #5E98F1;
-    }
 }
 
 .flex-container {
@@ -61,6 +35,44 @@
 }
 
 @media screen and (max-width: 750px) {
+    .cabecalho {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        border: 5px solid green;
+        color: white;
+        font-size: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation-name: alterarcorcabecalho;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+    @keyframes alterarcorcabecalho {
+        0% {
+            background-color: #5E98F1;
+        }
+
+        25% {
+            background-color: #5CC97B;
+        }
+
+        50% {
+            background-color: #F9D933;
+        }
+
+        75% {
+            background-color: #FFA44F;
+        }
+
+        100% {
+            background-color: #5E98F1;
+        }
+    }
     .flex-container {
         flex-direction: column;
         justify-content: center;
@@ -70,21 +82,6 @@
 }
 
 @media screen and (max-width: 600px) {
-    .cabecalho {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background: green;
-    color: white;
-    font-size: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-
-    }
     .flex-container {
         flex-direction: column;
         justify-content: center;
@@ -110,13 +107,14 @@
 }
 
 .flex-item3 {
+
     display: flex;
     background-color: olivedrab;
-    padding: 50px;
     border: 20px solid gray;
+    padding: 50px;
     border-radius: 20px;
-    justify-content: end;
-    align-items: end;
+    justify-content: center;
+    align-items: center;
 }
 
 .flex-item4 {
@@ -127,7 +125,7 @@
     padding: 10px;
     border: 10px solid gray;
     border-radius: 20px;
-    align-items:end;
+    align-items: end;
     justify-content: right;
 }
 
@@ -169,4 +167,3 @@
     box-shadow: 12px 10px 8px rgba(0, 0, 0, 0.8);
     justify-content: left;
 }
-
